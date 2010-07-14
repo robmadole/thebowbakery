@@ -15,9 +15,9 @@ install_requires = [
 ]
 
 
-setup(name='bowbakery',
+setup(name='thebowbakery',
     version=version,
-    description="Django-powered site running bowbakery.com",
+    description="Django-powered site running thebowbakery.com",
     long_description=README + '\n\n' + NEWS,
     classifiers=[
       # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -25,7 +25,7 @@ setup(name='bowbakery',
     keywords='',
     author='Rob Madole',
     author_email='robmadole@gmail.com',
-    url='http://bowbakery.com',
+    url='http://thebowbakery.com',
     license='Creative Commons Attribution-NonCommercial 3.0 Unported',
     packages=find_packages('src'),
     package_dir = {'': 'src'},include_package_data=True,
@@ -33,6 +33,6 @@ setup(name='bowbakery',
     install_requires=install_requires,
     entry_points={
         'console_scripts':
-            ['bowbakery=bowbakery:main']
+            ['thebowbakery=thebowbakery:main']
     }
 )

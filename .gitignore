@@ -12,3 +12,6 @@ develop-eggs
 tmp
 build
 dist
+
+src/thebowbakery/media/bow
+devdb

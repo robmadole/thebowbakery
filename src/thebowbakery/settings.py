@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'devdb/bowbakery.db',
+        'NAME': 'devdb/thebowbakery.db',
     }
 }
 
@@ -75,7 +75,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
 )
 
-ROOT_URLCONF = 'bowbakery.urls'
+ROOT_URLCONF = 'thebowbakery.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -101,3 +101,5 @@ TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 DJANGO_SERVES_MEDIA = DEBUG
 
 GRAPPELLI_ADMIN_TITLE = 'Bow Bakery'
+
+PRODUCT_NUMBER_PREFIX = 'BB'
