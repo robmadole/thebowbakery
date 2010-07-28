@@ -25,3 +25,22 @@ We are also using django-grappelli, and that takes an extra argument on the
 command line. ::
 
     ./bin/django runserver 0.0.0.0:8000 --adminmedia=ext/grappelli/media
+
+=====
+Notes
+=====
+
+HTML and CSS
+------------
+
+I started this project about the time HTML5 apps were taking off.  So here was
+some of the material I was looking over along the way.
+
+* http://diveintohtml5.org
+* http://wiki.github.com/stubbornella/oocss/
+
+During assembly
+---------------
+
+Use `Modernizr <http://www.modernizr.com/>`_. It's is an open source, MIT-licensed JavaScript library that detects
+support for many HTML5 & CSS3 features.
