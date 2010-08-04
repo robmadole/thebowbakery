@@ -1,0 +1,42 @@
+{% extends "structure/components.html" %}
+
+{% block extra_link %}
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}css/inventory.less" />
+{% endblock %}
+
+{% block main %}
+
+<div class="component">
+    <p>Display a bow</p>
+
+    <div class="bow">
+        <img src="{{ MEDIA_URL }}/bow/empty.png" style="left: 35px; top: -25px;" />
+
+        <span class="size">3&rdquo;</span>
+
+        <span class="price"><span class="dollar-sign">$</span>9</span>
+
+        <button class="button">Add to cart</button>
+    </div>
+</div>
+
+<div class="component">
+    <p>What if there are no bows left to purchase?</p>
+
+    <div class="bow">
+        <img src="{{ MEDIA_URL }}/bow/empty.png" style="left: 35px; top: -25px;" />
+
+        <span class="size">3&rdquo;</span>
+
+        <span class="price"><span class="dollar-sign">$</span>9</span>
+    </div>
+</div>
+
+<div class="component">
+    <p>The header</p>
+
+    <div class="head">
+        Nothing here right now
+    </div>
+</div>
+{% endblock %}

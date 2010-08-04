@@ -1,0 +1,21 @@
+/**
+ * Used during development to layout components
+ */
+.boxshadow (@blur: 15px, @color: #777) {
+    box-shadow: 2px 2px @blur @color;
+    -moz-box-shadow: 2px 2px @blur @color;
+    -webkit-box-shadow: 2px 2px @blur @color;
+}
+
+.component {
+    padding: 25px;
+    margin: 25px;
+    .boxshadow;
+
+    p:first-child {
+        padding-bottom: 15px;
+        border-bottom: 1px dotted gray;
+        margin-bottom: 15px;
+        margin-top: -10px;
+    }
+}
