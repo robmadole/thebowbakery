@@ -9,6 +9,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -74,6 +76,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.auth",
     "django.core.context_processors.request",
     "django.core.context_processors.media",
+    "django.core.context_processors.debug",
 )
 
 ROOT_URLCONF = 'thebowbakery.urls'
@@ -94,6 +97,8 @@ INSTALLED_APPS = (
     'grappelli',
     'django.contrib.admin',
     'django_nose',
+    'linkmedia',
+    'skin',
     'inventory',
     'south'
 )

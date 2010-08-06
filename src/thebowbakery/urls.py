@@ -12,6 +12,9 @@ urlpatterns = patterns('',
     # Our bow inventory, main display views
     url(r'^bows/', include('inventory.urls')),
 
+    # As the HTML and CSS is developed the Lego pieces are created here
+    url(r'^skin/', include('skin.urls')),
+
     url(r'^admin/',
         include(admin.site.urls)),
 

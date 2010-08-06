@@ -3,15 +3,24 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>The Bow Bakery - made from scratch daily</title>
-    <link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/libraries.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/grids.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="{{ MEDIA_URL }}css/content.css" />
-    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL}}css/buttons.less" />
+    <link rel="stylesheet"      type="text/css" media="all" href="{{ MEDIA_URL }}common/css/libraries.css" />
+    <link rel="stylesheet"      type="text/css" media="all" href="{{ MEDIA_URL }}common/css/grids.css" />
+    <link rel="stylesheet"      type="text/css" media="all" href="{{ MEDIA_URL }}common/css/content.css" />
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}common/css/buttons.less" />
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}common/css/page.less" />
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}skin/css/bakery.less" />
+
+    {% if debug %}
+    <!-- We include this if we are in debug mode so we can work on the individual components of the site -->
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}skin/css/components.less" />
+    {% endif %}
+
     {% block extra_link %}
     {% endblock %}
 
     <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js" type="text/javascript"></script>
-    <script type="text/javascript" src="{{ MEDIA_URL }}js/less-1.0.33.js"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}common/js/less-1.0.33.js"></script>
+
     {% block extra_script %}
     {% endblock %}
 </head>

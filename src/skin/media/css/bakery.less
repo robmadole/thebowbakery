@@ -1,0 +1,79 @@
+/**
+ * The main Bow Bakery skin
+ */
+.head {
+    background: transparent url(/media/skin/img/awning.png) scroll repeat-x 50% -24px;
+
+    .logo {
+        background: transparent url(/media/skin/img/logo.png) scroll no-repeat;
+    }
+}
+
+/**
+ * Change the color of the button like this
+ *
+ *   .green.button, .green.button:visited { background-color: #91bd09; }
+ * 
+ * Change the size with font-size and padding
+ *
+ *   .large.button, .large.button:visited {
+ *      font-size: 14px; padding: 8px 14px 9px;
+ *   }
+ */
+.button-rounded-corners (@radius: 5px) {
+    border-radius: @radius; 
+    -moz-border-radius: @radius; 
+    -webkit-border-radius: @radius;
+}
+
+.button-box-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background: #222 url(/media/skin/img/button-overlay.png) repeat-x; 
+    color: #fff; 
+    padding: 5px 10px 6px; 
+    .button-rounded-corners;
+    .button-box-shadow;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+    :hover {
+        background-color: #111; color: #fff;
+    }
+}
+
+.bow {
+    background-image: url(/media/skin/img/wax-paper.png);
+
+    .size {
+        font-size: 128%;
+        color: #777;
+        height: 26px;
+        width: 43px;
+        padding-left: 4px;
+        background-image: url(/media/skin/img/bow-size-indicator.png);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+
+    .button {
+        background-color: #888;
+    }
+
+    .price {
+        font-weight: bold;
+        font-size: 340%;
+        font-style: italic;
+        color: #0b2432;
+
+        .dollar-sign {
+            font-weight: normal;
+            font-size: 70%;
+            vertical-align: super;
+        } 
+    }
+}

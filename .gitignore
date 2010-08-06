@@ -15,3 +15,9 @@ dist
 
 src/thebowbakery/media/bow
 devdb
+
+src/thebowbakery/media/admin
+src/thebowbakery/media/common/
+src/thebowbakery/media/grappelli
+src/thebowbakery/media/inventory
+src/thebowbakery/media/skin

@@ -1,10 +1,21 @@
-{% extends "structure/components.html" %}
+{% extends "structure/basic.html" %}
 
 {% block extra_link %}
-    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}css/inventory.less" />
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}inventory/css/structure.less" />
+{% endblock %}
+
+{% block header %}
 {% endblock %}
 
 {% block main %}
+
+<div class="component">
+    <p>The header</p>
+
+    <div class="head">
+        <h1 class="logo">The Bow Bakery</h1>
+    </div>
+</div>
 
 <div class="component">
     <p>Display a bow</p>
@@ -32,11 +43,7 @@
     </div>
 </div>
 
-<div class="component">
-    <p>The header</p>
+{% endblock %}
 
-    <div class="head">
-        Nothing here right now
-    </div>
-</div>
+{% block footer %}
 {% endblock %}
