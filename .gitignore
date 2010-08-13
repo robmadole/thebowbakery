@@ -15,6 +15,7 @@ dist
 
 src/thebowbakery/media/bow
 devdb
+.coverage
 
 src/thebowbakery/media/admin
 src/thebowbakery/media/common/
