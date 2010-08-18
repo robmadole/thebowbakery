@@ -1,6 +1,12 @@
 /**
  * The main Bow Bakery skin
  */
+.simple-textshadow (@color: #fff) {
+    text-shadow: 0px 1px 0px @color;
+    -webkit-text-shadow: 0px 1px 0px @color;
+    -moz-text-shadow: 0px 1px 0px @color;
+}
+
 html {
     background-color: #ebebeb;
     min-width: 620px;
@@ -58,6 +64,71 @@ a {
     }
 }
 
+.checkout {
+    position: relative;
+    background-image: url(/media/skin/img/checkout-background.png);
+    height: 129px;
+
+    li {
+        position: relative;
+        padding-left: 15px;
+
+        .trash-it {
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            background-image: url(/media/skin/img/button/trash.png);
+            width: 29px;
+            height: 29px;
+
+            &:hover {
+                border: none;
+            }
+        }
+    }
+
+    .pay {
+        position: absolute;
+        background-image: url(/media/skin/img/button/checkout.png);
+        width: 192px;
+        height: 43px;
+        right: 20px;
+        top: 10px;
+        border: none;
+
+        &:hover {
+            background-position: 0px -43px;
+        }
+    }
+
+    .total {
+        .simple-textshadow(#fff);
+        position: relative;
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 230%;
+        text-align: right;
+        color: #3e3e3e;
+        position: absolute;
+        background-image: url(/media/skin/img/checkout-total.png);
+        right: 11px;
+        bottom: 0px;
+        width: 210px;
+        height: 74px;
+
+        span {
+            position: absolute;
+            top: 32px;
+            right: 30px;
+
+        }
+
+        .dollar-sign {
+            right: auto;
+            left: 30px;
+        }
+    }
+}
 
 @media (min-width: 950px) and (max-width: 1800px) {
     .head {
@@ -101,16 +172,6 @@ a {
     }
 }
 
-.button {
-    background: transparent url(/media/skin/img/button/add-to-cart.png) scroll no-repeat 0 0; 
-    height: 37px;
-    width: 131px;
-
-    &:hover {
-        border: none;
-        background-position: 0 -37px;
-    }
-}
 
 .bow {
     background-image: url(/media/skin/img/wax-paper.png);
@@ -137,5 +198,16 @@ a {
             font-size: 70%;
             vertical-align: super;
         } 
+    }
+
+    .add {
+        background: transparent url(/media/skin/img/button/add-to-cart.png) scroll no-repeat 0 0; 
+        height: 37px;
+        width: 131px;
+
+        &:hover {
+            border: none;
+            background-position: 0 -37px;
+        }
     }
 }

@@ -1,7 +1,7 @@
 {% extends "structure/basic.html" %}
 
 {% block extra_link %}
-    <link rel="stylesheet/less" type="text/css" media="all" href="{{ MEDIA_URL }}inventory/css/structure.less" />
+    <link rel="stylesheet/less" media="all" href="{{ MEDIA_URL }}inventory/css/structure.less" />
 {% endblock %}
 
 {% block header %}
@@ -23,6 +23,33 @@
 </div>
 
 <div class="component">
+    <p>The checkout</p>
+
+    <div class="checkout">
+        <ul class="string">
+            <li>
+                <img src="{{ MEDIA_URL }}/bow/empty.png" height="80px;" />
+                <a class="button trash-it" href="">Remove</a>
+            </li>
+            <li>
+                <img src="{{ MEDIA_URL }}/bow/empty.png" height="80px;" />
+                <a class="button trash-it" href="">Remove</a>
+            </li>
+            <li>
+                <img src="{{ MEDIA_URL }}/bow/empty.png" height="80px;" />
+                <a class="button trash-it" href="">Remove</a>
+            </li>
+        </ul>
+
+        <div class="total">
+            <span class="dollar-sign">$</span><span>9.00</span>
+        </div>
+
+        <a class="button pay" href="">Checkout with PayPal</a>
+    </div>
+</div>
+
+<div class="component">
     <p>Display a bow</p>
 
     <div class="bow">
@@ -32,7 +59,7 @@
 
         <span class="price"><span class="dollar-sign">$</span>9</span>
 
-        <a href="#" class="button">Add to cart</a>
+        <a href="#" class="button add">Add to cart</a>
     </div>
 </div>
 
@@ -60,7 +87,7 @@
 
                 <span class="price"><span class="dollar-sign">$</span>9</span>
 
-                <a href="#" class="button">Add to cart</a>
+                <a href="#" class="button add">Add to cart</a>
             </div>
         </div>
 
@@ -72,7 +99,7 @@
 
                 <span class="price"><span class="dollar-sign">$</span>9</span>
 
-                <a href="#" class="button">Add to cart</a>
+                <a href="#" class="button add">Add to cart</a>
             </div>
         </div>
 
@@ -84,7 +111,7 @@
 
                 <span class="price"><span class="dollar-sign">$</span>9</span>
 
-                <a href="#" class="button">Add to cart</a>
+                <a href="#" class="button add">Add to cart</a>
             </div>
         </div>
     </div>
